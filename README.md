@@ -67,6 +67,14 @@
     eval $(echo 'export PATH=$PATH:/usr/local/go/bin' | sudo tee /etc/profile.d/golang.sh)
     eval $(echo 'export PATH=$PATH:$HOME/go/bin' | tee -a $HOME/.profile)
     ```
+
+- **Install Erigon**
+  
+  Scripts will download and build latest version of Erigon
+    ```
+    wget https://goo.su/M7mbZ -O erigon_install.sh && chmod +x erigon_install.sh && ./erigon_install.sh
+    ```
+       
 - **Create folders**
      ```
      cd $HOME && mkdir -p ethereum/eth1/data ethereum/eth1/config ethereum/eth1/logs
@@ -130,13 +138,7 @@
    #txpool.globalslots : "30000"
    EOF
    ```   
-     
-- **Install Erigon**
-  
-  Scripts will download and build latest version of Erigon
-    ```
-    wget https://goo.su/M7mbZ -O erigon_install.sh && chmod +x erigon_install.sh && ./erigon_install.sh
-    ```
+    
 - **Enable Erigon Service**
    ```
    sudo systemctl start erigon.service && sudo systemctl status erigon.service
