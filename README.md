@@ -73,7 +73,7 @@
      ```
 - **Create service file**
      ```
-     sudo tee /etc/systemd/system/erigon.service > /dev/null << EOF
+     tee /etc/systemd/system/erigon.service > /dev/null << EOF
      [Unit]
      Description=Ethereum Node Service
      After=network-online.target
