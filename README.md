@@ -73,7 +73,7 @@
      ```
 - **Create service file**
      ```
-     tee /etc/systemd/system/erigon.service > /dev/null << EOF
+     sudo tee /etc/systemd/system/erigon.service > /dev/null << EOF
      [Unit]
      Description=Ethereum Node Service
      After=network-online.target
@@ -96,7 +96,7 @@
     ```
 - **Create config file**
    ```
-   sudo tee $HOME/ethereum/eth1/config/config.yaml > /dev/null << EOF
+   tee $HOME/ethereum/eth1/config/config.yaml > /dev/null << EOF
    datadir : '$HOME/ethereum/eth1/data/'
    port : "30303"
    chain : "mainnet"
