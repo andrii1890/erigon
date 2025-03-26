@@ -123,8 +123,6 @@
    metrics : "true"
    metrics.addr : "127.0.0.1"
    metrics.port : "6061"
-   diagnostics.endpoint.addr : "127.0.0.1"
-   diagnostics.endpoint.port : "6062"
    beacon.api.addr : "0.0.0.0"
    beacon.api.port : "5555"
    beacon.api.cors.allow-methods : ["GET","POST","PUT","OPTIONS"]
