@@ -160,10 +160,10 @@
     now you can simply find logs: erigon_log
 
 ***HTTP*** request will be available on: ***http://<YOUR_IP>:8545***
-
-## Don't forget to install ufw, and protect your endpoint
   
 ***WS*** request will be available on: ***ws://<YOUR_IP>:8546***
   
 **Beacon Client*** request will be available on: ***http://<YOUR_IP>:5555***
+
+## Don't forget to install ufw, and protect your endpoint
 
