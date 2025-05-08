@@ -129,6 +129,7 @@
    beacon.api.cors.allow-origins : "*"
    beacon.api : ["beacon","builder","config","debug","node","lighthouse"]
    private.api.addr : "localhost:9090"
+   caplin.blobs-no-pruning : "true"
    caplin.states-archive : "true"
    caplin.blocks-archive : "true"
    caplin.blobs-archive : "true"
