@@ -1,4 +1,4 @@
-# Erigon Archive Node
+# Erigon Mainnet Archive Node   ERIGON+CAPLIN
   **Erigon by default is "all in one binary" solution Consensus Layer + Execution Layer**
   
   - Execution Layer - Erigon
@@ -13,14 +13,14 @@
 
     Caplin's Usage
     
-       Caplin is be enabled by default. to disable it and enable the Engine API, use the --externalcl flag. from that point on, an external Consensus Layer will not be need anymore.
+       Caplin is be enabled by default. to disable it and enable the Engine API, use the --externalcl flag. from that point on, an external Consensus Layer will be need.
 
        Caplin also has an archivial mode for historical states and blocks. it can be enabled through the --caplin.archive flag. In order to enable the caplin's Beacon API, the flag --beacon.api=<namespaces> must be added. e.g: -- 
        beacon.api=beacon,builder,config,debug,node,validator,lighthouse will enable all endpoints.
     
     **NOTE: Caplin is not staking-ready so aggregation endpoints are still to be implemented. Additionally enabling the Beacon API will lead to a 6 GB higher RAM usage.
   
-    ArchiveNode Ethereum Mainnet: 3.1TB (October 2024) and FullNode: 1.5TB (October 2024)
+    ArchiveNode Ethereum Mainnet: 3.0TB (May 2025) and FullNode: 1.7TB (May 2025)
   
   
 ## Hardware Requirements
@@ -160,6 +160,8 @@
     now you can simply find logs: erigon_log
 
 ***HTTP*** request will be available on: ***http://<YOUR_IP>:8545***
+
+## Don't forget to install ufw, and protect your endpoint
   
 ***WS*** request will be available on: ***ws://<YOUR_IP>:8546***
   
