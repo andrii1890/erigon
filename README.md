@@ -106,9 +106,7 @@
    ```
    tee $HOME/ethereum/eth1/config/config.yaml > /dev/null << EOF
    datadir : '$HOME/ethereum/eth1/data/'
-   port : "30303"
    chain : "mainnet"
-   identity : "RPC ethereum mainnet"
    prune.mode : "archive"
    nat : "any"
    http : "true"
