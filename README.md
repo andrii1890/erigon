@@ -152,10 +152,10 @@
 - **Add alias for erigon logs**
     ```
     echo "#Erigon Logs" >> $HOME/.profile
-    echo 'alias erigon_log="tail -f $HOME/ethereum/eth1/logs/erigon.log"' >> $HOME/.profile
+    echo 'alias erigon.log="tail -f $HOME/ethereum/eth1/logs/erigon.log"' >> $HOME/.profile
     source $HOME/.profile
     ```
-    now you can simply find logs: erigon_log
+    now you can simply find logs: erigon.log
 
 ***HTTP*** request will be available on: ***http://<YOUR_IP>:8545***
   
